@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "b5c80019-e667-46fe-9d19-ee99ce76c4da",
+		"name": "RentalAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear Automovil",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"marca\": \"Hyundai\",\r\n  \"modelo\": \"IONIQ\",\r\n  \"patente\": \"PDN7871\",\r\n  \"anio\": 2019,\r\n  \"kilometraje\":15000,\r\n  \"cilindrada\":1.6,\r\n  \"tipo\":\"Sedán\",\r\n  \"puertas\":4,\r\n  \"pasajeros\":5,\r\n  \"capacidadMaletero\":500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/vehiculo/automovil/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"vehiculo",
+						"automovil",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Automovil",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"marca\": \"Hyundai\",\r\n  \"modelo\": \"IONIQ\",\r\n  \"patente\": \"PDN7871\",\r\n  \"anio\": 2019,\r\n  \"kilometraje\":15000,\r\n  \"cilindrada\":1.6,\r\n  \"tipo\":\"Hybrid-Sedán\",\r\n  \"puertas\":5,\r\n  \"pasajeros\":4,\r\n  \"capacidadMaletero\":500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/vehiculo/automovil/5b54e388-755b-434c-9d1c-839d6916e890",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"vehiculo",
+						"automovil",
+						"5b54e388-755b-434c-9d1c-839d6916e890"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIST Vehiculos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/vehiculo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"vehiculo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Camión",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"marca\": \"Foton\",\r\n  \"modelo\": \"AM300\",\r\n  \"patente\": \"PQR3001\",\r\n  \"anio\": 2020,\r\n  \"kilometraje\":300102.1,\r\n  \"cilindrada\":2.4,\r\n  \"tipo\":\"Furgón\",\r\n  \"capacidadToneladas\":2.1,\r\n  \"ejes\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/vehiculo/camion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"vehiculo",
+						"camion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Camión",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"marca\": \"Caterpillar\",\r\n  \"modelo\": \"AM300\",\r\n  \"patente\": \"PQR3001\",\r\n  \"anio\": 2020,\r\n  \"kilometraje\":300102.1,\r\n  \"cilindrada\":2.4,\r\n  \"tipo\":\"Furgón\",\r\n  \"capacidadToneladas\":1.5,\r\n  \"ejes\":4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/vehiculo/camion/063110b7-3b29-4dc5-8302-e799ad108c25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"vehiculo",
+						"camion",
+						"063110b7-3b29-4dc5-8302-e799ad108c25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Vehiculo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/vehiculo/063110b7-3b29-4dc5-8302-e799ad108c25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"vehiculo",
+						"063110b7-3b29-4dc5-8302-e799ad108c25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Mantenimiento",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"resumen\": \"Mantenimiento programado de 20000 km\",\r\n  \"fecha\": \"2023-03-20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/vehiculo/f5da1d51-6a5b-409e-8971-65dafb7454a8/mantenimiento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"vehiculo",
+						"f5da1d51-6a5b-409e-8971-65dafb7454a8",
+						"mantenimiento"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
