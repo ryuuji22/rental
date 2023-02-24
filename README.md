@@ -6,7 +6,7 @@ A continuación se detalla la arquitectura de la aplicación
 
 Se utilizaron las siguientes herramientas:
 
- - SpringBoot con servidor apache por default
+ - SpringBoot con servidor tomcat por default
  - JpaRepository para manejo de operaciones a la BDD.
  - Arquitectura Hexagonal apoyado por DDD dividiendo la aplicación en Domain, Infraestructure y Application.
  - Uso del patrón de comportamiento **Mediator** para delegar la ejecución de los **Commands** desacoplando las capas.
